@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday! 🎉</title>
+    <meta name="description"
+        content="A beautiful, premium birthday celebration website with amazing animations and effects">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="particles-container" id="particles"></div>
+
+    <div class="confetti-container" id="confetti"></div>
+
+    <div class="balloons-container" id="balloons"></div>
+
+    <canvas id="fireworks"></canvas>
+
+    <div class="main-container">
+        <div class="welcome-screen" id="welcome">
+            <div class="welcome-content">
+                <div class="gift-icon">🎁</div>
+                <h1 class="welcome-title">Something Special Awaits...</h1>
+                <p class="welcome-subtitle">Click the gift to unwrap your surprise</p>
+                <button class="start-btn" id="startBtn">
+                    <span class="btn-text">Open Gift</span>
+                    <span class="btn-icon">✨</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="celebration-screen" id="celebration">
+            <div class="content-wrapper">
+                <div class="cake-card glass-card">
+                    <div class="cake-container">
+                        <div class="cake">
+                            <div class="cake-layer layer-3">
+                                <div class="candle">
+                                    <div class="flame"></div>
+                                </div>
+                            </div>
+                            <div class="cake-layer layer-2"></div>
+                            <div class="cake-layer layer-1"></div>
+                            <div class="cake-plate"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="message-card glass-card">
+                    <div class="message-header">
+                        <div class="sparkle-icon">✨</div>
+                        <h1 class="main-greeting">Happy Birthday!</h1>
+                        <div class="sparkle-icon">✨</div>
+                    </div>
+
+                    <div class="message-content">
+                        <div class="message-line">
+                            <span class="emoji">🎉</span>
+                            <p class="message-text">Happy Birthday 🥳</p>
+                        </div>
+                        <div class="message-line">
+                            <span class="emoji">🤣</span>
+                            <p class="message-text">May you grow taller at least a little this year 😆</p>
+                        </div>
+                        <div class="message-line">
+                            <span class="emoji">🥰</span>
+                            <p class="message-text">It was really nice meeting you and chatting with you</p>
+                        </div>
+                         <div class="message-line">
+                            <span class="emoji">😊</span>
+                            <p class="message-text">Being bored that day is one of the best thing that ever happened to me ❤️</p>
+                        </div>
+                        <div class="message-line">
+                            <span class="emoji">💫</span>
+                            <p class="message-text">Hope you have a nice day and a great year ahead of you</p>
+                        </div>
+                        <div class="message-line">
+                            <span class="emoji">😭</span>
+                            <p class="message-text">and hope that you won't get any "tattoo" this year (or any other year for that
+                                matter)</p>
+                        </div>
+                        <div class="message-line">
+                            <span class="emoji">😊</span>
+                            <p class="message-text">Oh, and welcome to adulthood (Whatever tf it means)</p>
+                        </div>
+                    </div>
+
+                    <div class="signature">
+                        <p class="from-text">With love & best wishes</p>
+                        <div class="hearts">💕 💝 💕</div>
+                    </div>
+
+                    <button class="music-btn" id="musicBtn">
+                        <!-- <span class="music-icon">🎵</span>
+                        <span class="music-text">Play Music</span> -->
+                    </button>
+                </div>
+
+                <div class="interaction-buttons">
+                    <button class="fun-btn" id="confettiBtn">
+                        <span>🎊 More Confetti</span>
+                    </button>
+                    <button class="fun-btn" id="fireworksBtn">
+                        <span>🎆 Fireworks</span>
+                    </button>
+                    <button class="fun-btn" id="balloonsBtn">
+                        <span>🎈 Balloons</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="birthdayMusic" loop>
+        <source src="Song.mp3" type="audio/mp3">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
